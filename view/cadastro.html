@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #363333;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+        }
+        #divResposta{
+            background-color:transparent;
+            border-radius: 9px;
+            max-width: 450px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            padding: 30px;            
+        }
+
+        .input-container { 
+            display: flex; 
+            align-items: center; 
+            margin-top: 20px; /* Espaço entre o input/botão e a divResposta */ 
+            flex-direction: column;
+
+        }   
+        .input-container input {
+            margin: 5px 0; /* Espaço entre os inputs */
+            padding: 10px;
+            width: 400px; /* Largura dos inputs */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 { 
+
+        color : white;
+        } 
+        .input-container button {
+            margin-top: 10px; /* Espaço acima do botão */
+            padding: 10px  20px;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-size: 16px;
+            background-color: rgb(111, 163, 163);
+            cursor: pointer;
+        }
+        p{
+            color: rgb(193, 180, 180);
+        }
+    </style>
+</head>
+
+<body>
+<div id="divResposta"> 
+    <h1>Create account</h1>
+    <form action="#">
+        <div class="input-container"> 
+            <input type="text" id="txtNome" placeholder="Nome">
+            <input type="text" id="txtEmail" placeholder="Email">
+            <input type="password" id="txtSenha" placeholder="Senha">
+
+            <button id="bntCadastrar">Cadastrar!</button>
+
+            <p> 
+            Possui cadastro? <a href="login.html" >Login</a>
+            </p>
+        </div>
+    </form>
+</div>
+    
+</body>
+
+    <script type="text/javascript" src="/js/cadastro.js"></script>
+
+    <script>
+    
+    
+    </script>
+</html>

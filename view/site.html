@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viado</title>
+</head>
+<body>
+<div id="divResposta"></div>
+
+</body>
+
+
+<script type="text/javascript" src="/js/sessao.js"></script>
+<script>
+
+    const objJSon = existeSessao()
+    const divResposta = document.getElementById("divResposta");
+    const p = document.createElement("p");
+
+    p.textContent = 'email= << ' + objJSon.emailUsuario ;
+    divResposta.appendChild(p)
+</script>
+</html>
